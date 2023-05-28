@@ -13,7 +13,7 @@ const StockList = ({ data }: propData) => {
   const navigate = useNavigate();
 
   return (
-    <div className='flex justify-center'>
+    <div id='stocklist' className='flex justify-center'>
       <div className='max-w-7xl'>
         <div className='overflow-x-auto'>
           <table className='bg-slate-700 text-sm sm:text-md md:text-lg w-full table-auto m-5'>

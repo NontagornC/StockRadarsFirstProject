@@ -1,8 +1,3 @@
-export default interface hello {
-    name:string
-    number:number
-}
-
 export type singleStock = {
     F_TYPE?:string,
     N_BUSINESS_TYPE_E?:string,

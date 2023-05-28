@@ -25,9 +25,9 @@ const Navbar = () => {
       <h1 className="w-full text-3xl text-[#00df9a] font-bold p-4">StockScanning</h1>
 
       <ul className='hidden md:flex' >
-        <li className='text-xl p-8 font-bold'>
-          <a href="#" onClick={()=> navigate(`/`)}>Homepage</a>
-        </li>
+          <li className='text-xl p-8 font-bold'>
+            <a href="#" onClick={()=> navigate(`/`)}>Homepage</a>
+          </li>
       </ul>
 
       <div onClick={()=>handleNav()} className="block md:hidden">
@@ -38,7 +38,7 @@ const Navbar = () => {
           <h1 className="w-full text-3xl text-[#00df9a] font-bold p-4">StockScanning</h1>
           <ul className='uppercase p-4'>
             <li className='text-xl p-8 font-bold'>  
-              <a href="#" onClick={()=> navigate(`/`)}>Home</a>
+              <a href="#" onClick={()=> navigate(`/`)}>Homepage</a>
             </li>
         </ul>
       </div>

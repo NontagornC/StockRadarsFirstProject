@@ -13,33 +13,33 @@ const SingleStock = ({ data }: propData) => {
   };
 
   return (
-    <div className="flex justify-center bg-white py-7">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-[#00DF9A] text-3xl sm:text-4xl font-bold mb-6">{singleStock[0]?.N_name}</h1>
-        <p className="text-[#00df9893] text-xl sm:text-2xl font-medium mb-6">{singleStock[0]?.N_COMPANY_T}</p>
+    <div className="flex justify-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-slate-700 rounded-lg">
+        <h1 className="text-3xl sm:text-4xl font-bold mb-6 text-[#00DF9A] pt-3">{singleStock[0]?.N_name}</h1>
+        <h1 className="text-2xl sm:text-3xl font-medium mb-6 text-[#4CA599]">{singleStock[0]?.N_COMPANY_T}</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-          <div className="bg-black text-white p-4 rounded-md shadow-md">
-            <h2 className="text-lg font-bold mb-2">Business Type (English)</h2>
-            <p>{singleStock[0]?.N_BUSINESS_TYPE_E}</p>
+          <div className="bg-slate-600 p-4 rounded-md shadow-md">
+            <h2 className="text-lg font-bold mb-2 text-[#00DF9A]">Business Type (English)</h2>
+            <p className="text-white">{singleStock[0]?.N_BUSINESS_TYPE_E}</p>
           </div>
-          <div className="bg-black text-white p-4 rounded-md shadow-md">
-            <h2 className="text-lg font-bold mb-2">Business Type (Thai)</h2>
-            <p>{singleStock[0]?.N_BUSINESS_TYPE_T}</p>
+          <div className="bg-slate-600 p-4 rounded-md shadow-md">
+            <h2 className="text-lg font-bold mb-2 text-[#00DF9A]">Business Type (Thai)</h2>
+            <p className="text-white">{singleStock[0]?.N_BUSINESS_TYPE_T}</p>
           </div>
         </div>
         <div className="mt-8">
-          <h2 className="text-lg font-bold mb-2">Company Name</h2>
-          <p>{singleStock[0]?.N_COMPANY_E}</p>
+          <h2 className="text-lg font-bold mb-2 text-[#00DF9A]">Company Name</h2>
+          <p className='text-white'>{singleStock[0]?.N_COMPANY_E}</p>
         </div>
         <div className="mt-8">
-          <h2 className="text-lg font-bold mb-2">Website</h2>
-          <a href={singleStock[0]?.N_URL} className="text-blue-600 hover:underline">
+          <h2 className="text-lg font-bold mb-2 text-[#00DF9A]">Website</h2>
+          <a href={singleStock[0]?.N_URL} className="text-white hover:underline hover:text-blue-600">
             {singleStock[0]?.N_URL}
           </a>
         </div>
-        <div className="mt-8">
-          <h2 className="text-lg font-bold mb-2">Market Cap</h2>
-          <p>{singleStock[0]?.marketcap !== undefined ? formatNumber(singleStock[0]?.marketcap) : ""}</p>
+        <div className="mt-8 pb-3">
+          <h2 className="text-lg font-bold mb-2 text-[#00DF9A]">Market Cap</h2>
+          <p className="text-white">{singleStock[0]?.marketcap !== undefined ? `${formatNumber(singleStock[0]?.marketcap)} THB` : ""}</p>
         </div>
       </div>
     </div>
