@@ -1,1 +1,1 @@
-# StockRadarsFirstProject
+# StockRadars 1st Project
